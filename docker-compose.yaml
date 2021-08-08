@@ -1,0 +1,17 @@
+version: "2.1"
+
+services:
+
+  remmina:
+    image: linuxserver/remmina
+    container_name: remmina
+    environment:
+      - PUID=998
+      - PGID=100
+      - TZ=Europe/Madrid
+    volumes:
+      - ./config:/config
+    ports:
+      - "8200:3000"
+    restart: unless-stopped
+    
