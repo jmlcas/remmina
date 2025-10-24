@@ -1,9 +1,7 @@
-version: "2.1"
-
 services:
 
   remmina:
-    image: linuxserver/remmina
+    image: lscr.io/linuxserver/remmina:latest
     container_name: remmina
     environment:
       - PUID=998
@@ -13,5 +11,8 @@ services:
       - ./config:/config
     ports:
       - "8200:3000"
+      - "8300:3001"
+    shm_size: "1gb" 
     restart: unless-stopped
+
     
