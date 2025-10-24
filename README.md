@@ -1,2 +1,3 @@
-# remmina
-Remmina - Docker-compose
+# Remmina
+
+Ver en "https:localhost:8300"
