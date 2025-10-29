@@ -4,8 +4,8 @@ services:
     image: lscr.io/linuxserver/remmina:latest
     container_name: remmina
     environment:
-      - PUID=998
-      - PGID=100
+      - PUID=1000
+      - PGID=1000
       - TZ=Europe/Madrid
     volumes:
       - ./config:/config
@@ -13,6 +13,5 @@ services:
       - "8200:3000"
       - "8300:3001"
     shm_size: "1gb" 
-    restart: unless-stopped
+    restart: unless-stopped    
 
-    
