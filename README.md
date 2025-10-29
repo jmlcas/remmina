@@ -1,3 +1,3 @@
 # Remmina
 
-Ver en "http://localhost:8300"
+Ver en "https://localhost:8300"
